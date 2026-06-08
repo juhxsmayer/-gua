@@ -3,51 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luz Fácil | Energia para Você</title>
+    <title>Luz Fácil</title>
+    <!-- Google Fonts -->
+    <link href="" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1>Luz Fácil</h1>
-        <p>Soluções simples e confiáveis em energia elétrica</p>
+        <div class="container">
+            <h1>Luz Fácil</h1>
+            <nav>
+                <a href="#servicos">Serviços</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <a href="#servicos">Serviços</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#contato">Contato</a>
-    </nav>
+    <section id="hero">
+        <div class="container">
+            <h2>Energia consciente para um futuro sustentável</h2>
+            <p>Informações, dicas e soluções para economizar energia elétrica e ajudar moradias sem acesso à luz.</p>
+            <a href="#contato" class="btn">Entre em Contato</a>
+        </div>
+    </section>
 
     <section id="servicos">
-        <h2>Nossos Serviços</h2>
-        <ul>
-            <li>Oferecemos um site informativo voltado para enformação ambiental,com foco no uso consiente de energia elétrica.</li>
-            <li>Em nosso site, os usuarios podem acessar dados relevantes, tirar duvidas, conhecer dicas de economia e aprender formas de reduzir disperdícios.</li>
-            <li>Entre em contato que forneceremos dados e dicas baseados em estudos e observações feitas em sua região</li>
-        </ul>
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Informação Ambiental</h3>
+                    <p>Aprenda sobre o consumo consciente de energia elétrica e como reduzir desperdícios.</p>
+                </div>
+                <div class="card">
+                    <h3>Dicas de Economia</h3>
+                    <p>Receba orientações práticas para economizar energia em sua residência e empresa.</p>
+                </div>
+                <div class="card">
+                    <h3>Consultoria Local</h3>
+                    <p>Obtenha dados e dicas baseadas em estudos realizados em sua região.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>A empresa Luz Fácil foi criada com a missão de promever a concientização sobre o consumo de ernegia elétrica e ajudar moradias sem acesso à luz. A informação é uma ferramenta essencial para construção de uma sociedade mais sustentavel. Por isso, desenvolvemos uma plataforma que, ao enviar seus dados, lhe fornece o contato de nossos desenvolvedores do site e do projeto para te orientar sobre o seu consumo de luz.</p>
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>A empresa Luz Fácil foi criada para conscientizar sobre o consumo de energia elétrica e ajudar quem não tem acesso à luz. A informação é essencial para construir uma sociedade mais sustentável.</p>
+            <p>Nossa plataforma fornece contato direto com os desenvolvedores do projeto, oferecendo orientação personalizada para seu consumo de energia.</p>
+        </div>
     </section>
 
     <section id="contato">
-        <h2>Contato</h2>
-        <form>
-            <input type="text" placeholder="Seu Nome" required>
-            <input type="email" placeholder="Seu Email" required>
-            <textarea placeholder="Sua Mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Email: <a href="mailto:contato@luzfacil.com.br">contato@luzfacil.com.br</a></p>
+            <p>Telefone: (00) 12345-6789</p>
+            <a href="mailto:contato@luzfacil.com.br" class="btn">Enviar Email</a>
+        </div>
     </section>
 
     <footer>
-        <p>© 2026 Luz Fácil. Todos os direitos reservados.</p>
-        <p>Desenvolvido por: Rayssa, Julia G, Kauan & Erick (3º A)</p>
-        <p>&copy; 2026 - Todos os direitos reservados</p>
+        <div class="container">
+            <p>© 2026 Luz Fácil. Todos os direitos reservados.</p>
+            <p>Desenvolvido por: Rayssa, Julia G, Kauan & Erick (3º A)</p>
+        </div>
     </footer>
-
 </body>
 </html>

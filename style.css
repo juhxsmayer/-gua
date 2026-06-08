@@ -1,95 +1,157 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #333;
-    background-color: rgb(250, 212, 218);
+    box-sizing: border-box;
 }
 
-header {
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
     background-color: pink;
-    text-align: center;
-    padding: 30px 20px;
+    color: black;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: rgb(255, 153, 192);
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 header h1 {
-    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    color: #333;
 }
 
 nav {
-    background-color: rgb(216, 153, 162);
     text-align: center;
-    padding: 10px 0;
+    margin-top: 10px;
 }
 
 nav a {
-    color: pink;
     margin: 0 15px;
     text-decoration: none;
+    color: #333;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: rgb(255, 153, 192);
 }
 
-section {
-    padding: 40px 20px;
+/* Hero Section */
+#hero {
+    background: linear-gradient(#ff79bc, #FFC5D3);
+    color: #333;
+    padding: 100px 20px;
     text-align: center;
 }
 
-section h2 {
+#hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
 }
 
-ul li {
-    margin-bottom: 10px;
-}
-
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-input, textarea {
-    padding: 10px;
-    border: 1px solid rgb(255, 116, 139);
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-textarea {
-    resize: none;
-    height: 100px;
-}
-
-button {
-    background-color: pink;
-    color: rgb(216, 153, 162);
-    border: none;
-    padding: 10px;
-    font-size: 1rem;
-    cursor: pointer;
+.btn {
+    background-color: #ff79bc;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    transition: background 0.3s;
 }
 
-button:hover {
-    background-color:pink;
+.btn:hover {
+    background-color: #ff79bc,
 }
 
-footer {
+/* Serviços */
+#servicos {
+    padding: 50px 0;
     text-align: center;
+}
+
+#servicos h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ff79bc;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
     padding: 20px;
-    background-color: pink;
+    flex: 1 1 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    color: #ff79bc;
+    margin-bottom: 15px;
+}
+
+/* Sobre */
+#sobre {
+    padding: 50px 0;
+    background-color: rgb(252, 204, 212);
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Contato */
+#contato {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contato a {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #ff79bc;
     color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+    }
 }
