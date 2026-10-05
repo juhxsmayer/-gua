@@ -1,157 +1,180 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* =========================================================
+   style.css
+   Aqui ficam cores, tamanhos e posicoes. Nada aqui funciona,
+   tudo aqui aparece. Mexa a vontade, e impossivel quebrar.
+   ========================================================= */
+
+/* As cores do site inteiro ficam aqui. Troque um valor e ele
+   muda em todos os lugares de uma vez. */
+:root{
+  --tinta:  #10201c;   /* cor do texto */
+  --papel:  #f1f0ea;   /* fundo da pagina */
+  --marca:  #1f4e79;   /* cor principal, botoes e barras */
+  --sinal:  #e39a10;   /* cor de destaque */
+  --alerta: #a34123;   /* cor de apagar */
+  --borda:  #ccd2c8;
+  --largura: 1080px;   /* largura maxima do conteudo */
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background-color: pink;
-    color: black;
+*{ box-sizing: border-box; margin: 0; padding: 0; }
+
+body{
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
 }
 
-/* Container */
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
+h1,h2,h3{ font-family: Georgia, 'Times New Roman', serif; line-height: 1.15; }
+h1{ font-size: 2.2rem; }
+h2{ font-size: 1.6rem; margin-bottom: .8rem; }
+h3{ font-size: 1.1rem; }
+img{ max-width: 100%; display: block; }
+a{ color: var(--marca); }
+
+/* --------- TOPO --------- */
+.topo{
+  background: var(--tinta);
+  border-bottom: 5px solid var(--sinal);
+  position: sticky;   /* gruda no topo quando rola a pagina */
+  top: 0;
+  z-index: 10;
+}
+.faixa{
+  max-width: var(--largura); margin: 0 auto; padding: .9rem 1.2rem;
+  display: flex; flex-wrap: wrap; gap: .8rem;
+  align-items: center; justify-content: space-between;
+}
+.marca{ color: #fff; font-weight: 700; }
+.topo nav{ display: flex; gap: 1.2rem; }
+.topo nav a{ color: #d8ddd6; text-decoration: none; font-size: .95rem; }
+.topo nav a:hover{ color: var(--sinal); }
+
+/* --------- CAPA --------- */
+.capa{ position: relative; background: var(--tinta); }
+.capa img{ width: 100%; height: 420px; object-fit: cover; opacity: .55; }
+.capa-texto{
+  position: absolute; inset: 0;
+  max-width: var(--largura); margin: 0 auto; padding: 2rem 1.2rem;
+  display: flex; flex-direction: column; justify-content: center;
+  align-items: flex-start; gap: 1rem; color: #fff;
+}
+.capa-texto h1{ max-width: 16ch; }
+.capa-texto p{ max-width: 46ch; }
+
+/* --------- BOTOES --------- */
+.botao{
+  display: inline-block; background: var(--sinal); color: var(--tinta);
+  border: none; padding: .75rem 1.4rem; font-size: 1rem; font-weight: 700;
+  text-decoration: none; cursor: pointer;
+}
+.botao:hover{ background: #ffc927; }
+.botao-fino{
+  background: none; border: 1px solid var(--borda); color: var(--tinta);
+  padding: .4rem .8rem; font-size: .85rem; cursor: pointer;
+}
+.botao-fino:hover{ background: var(--borda); }
+.botao-fino.perigo{ border-color: var(--alerta); color: var(--alerta); }
+.botao-fino.perigo:hover{ background: var(--alerta); color: #fff; }
+
+/* Contorno visivel para quem navega pelo teclado. Nao apague. */
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible, label:focus-visible{
+  outline: 3px solid var(--marca); outline-offset: 2px;
 }
 
-/* Header */
-header {
-    background-color: rgb(255, 153, 192);
-    padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+/* --------- BLOCOS --------- */
+.bloco{
+  max-width: var(--largura); margin: 0 auto;
+  padding: 3rem 1.2rem; border-bottom: 1px solid var(--borda);
+}
+.largura-texto{ max-width: 68ch; margin-bottom: .6rem; }
+
+.galeria{
+  margin-top: 1.5rem; display: grid; gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.galeria img{ height: 220px; object-fit: cover; width: 100%; }
+figcaption{
+  font-size: .85rem; margin-top: .5rem;
+  border-left: 4px solid var(--sinal); padding-left: .6rem;
 }
 
-header h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
-    text-align: center;
-    color: #333;
+/* --------- PAINEL DE NUMEROS --------- */
+.painel{
+  display: grid; gap: 1rem; margin-top: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.numero{
+  background: #fff; border: 1px solid var(--borda);
+  border-top: 5px solid var(--marca); padding: 1rem;
+}
+.numero b{ display: block; font-size: 2.1rem; line-height: 1; }
+.numero span{ font-size: .8rem; color: #55605a; }
+.numero.pequeno{ border-top-color: var(--sinal); }
+.numero.pequeno b{ font-size: 1.4rem; }
+
+/* --------- FORMULARIO --------- */
+.formulario{
+  display: grid; gap: 1rem; max-width: 760px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.campo{ display: flex; flex-direction: column; gap: .3rem; }
+.campo.largo{ grid-column: 1 / -1; }
+label{ font-size: .85rem; font-weight: 600; }
+input, select, textarea{
+  font: inherit; padding: .6rem; border: 1px solid var(--borda);
+  background: #fff; color: var(--tinta);
+}
+.formulario .botao{ grid-column: 1 / -1; justify-self: start; }
+.aviso{ grid-column: 1 / -1; font-size: .9rem; color: var(--marca); min-height: 1.4em; }
+
+/* --------- FERRAMENTAS DO MURAL --------- */
+.ferramentas{
+  display: flex; gap: 1rem; flex-wrap: wrap;
+  align-items: flex-end; margin: 1rem 0 1.5rem;
+}
+.ferramenta{ display: flex; flex-direction: column; gap: .3rem; }
+.grupo-botoes{ display: flex; gap: .4rem; flex-wrap: wrap; }
+.grupo-botoes label{ cursor: pointer; }
+
+/* --------- CARTOES --------- */
+.lista{
+  display: grid; gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+.cartao{
+  background: #fff; border: 1px solid var(--borda);
+  border-left: 6px solid var(--marca); padding: 1rem;
+  display: flex; flex-direction: column; gap: .5rem;
+}
+.cartao p{ font-size: .92rem; }
+.etiqueta{ font-size: .75rem; font-weight: 700; color: #55605a; }
+.cartao footer{
+  display: flex; justify-content: space-between; align-items: center;
+  gap: .5rem; margin-top: auto; padding-top: .5rem;
+  border-top: 1px dashed var(--borda); font-size: .8rem;
+}
+.cartao .apagar{
+  background: none; border: 1px solid var(--alerta); color: var(--alerta);
+  padding: .25rem .6rem; font-size: .78rem; cursor: pointer;
+}
+.cartao .apagar:hover{ background: var(--alerta); color: #fff; }
+.vazio{
+  grid-column: 1 / -1; padding: 2rem; text-align: center;
+  border: 2px dashed var(--borda); color: #55605a;
 }
 
-nav {
-    text-align: center;
-    margin-top: 10px;
-}
+/* --------- RODAPE --------- */
+.rodape{ background: var(--tinta); color: #d8ddd6; padding: 2rem 1.2rem; text-align: center; }
+.miudo{ font-size: .8rem; color: #97a19b; margin-top: .4rem; }
 
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: rgb(255, 153, 192);
-}
-
-/* Hero Section */
-#hero {
-    background: linear-gradient(#ff79bc, #FFC5D3);
-    color: #333;
-    padding: 100px 20px;
-    text-align: center;
-}
-
-#hero h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-#hero p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-}
-
-.btn {
-    background-color: #ff79bc;
-    color: #fff;
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background-color: #ff79bc,
-}
-
-/* Serviços */
-#servicos {
-    padding: 50px 0;
-    text-align: center;
-}
-
-#servicos h2 {
-    font-family: 'Montserrat', sans-serif;
-    color: #ff79bc;
-    margin-bottom: 40px;
-}
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.card {
-    background-color: white;
-    padding: 20px;
-    flex: 1 1 250px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-.card h3 {
-    color: #ff79bc;
-    margin-bottom: 15px;
-}
-
-/* Sobre */
-#sobre {
-    padding: 50px 0;
-    background-color: rgb(252, 204, 212);
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-}
-
-/* Contato */
-#contato {
-    padding: 50px 0;
-    text-align: center;
-}
-
-#contato a {
-    display: inline-block;
-    margin-top: 20px;
-}
-
-/* Footer */
-footer {
-    background-color: #ff79bc;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 0.9em;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-    }
+/* --------- CELULAR --------- */
+/* Tudo aqui dentro so vale em telas de ate 640px de largura */
+@media (max-width: 640px){
+  h1{ font-size: 1.7rem; }
+  .capa img{ height: 340px; }
+  .bloco{ padding: 2rem 1rem; }
+  .ferramentas{ flex-direction: column; align-items: stretch; }
 }

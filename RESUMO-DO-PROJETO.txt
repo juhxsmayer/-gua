@@ -1,0 +1,33 @@
+PROJETO: Luz Radia
+
+PROBLEMA
+Ações de limpeza e doação acontecem no bairro, mas ninguém registra, então nada é cobrado nem tem continuidade.
+
+QUEM SOFRE: Moradores da Vila Nova que organizam mutirões por conta própria e nunca sabem o que já foi feito.
+ONDE: Vila Nova, entre a Rua das Palmeiras e a praça central.
+
+O QUE O SISTEMA FAZ
+Registra cada ação realizada no bairro com responsável, local e data, e mostra tudo num mural público.
+
+QUEM USA: Moradores, a associação de bairro e os alunos que organizam mutirões.
+POR QUE USARIA: O trabalho dela fica visível e ela consegue mostrar para a prefeitura o que já foi feito.
+COMO SE MANTEM: A associação de moradores fica com a senha e alimenta o mural. O site é gratuito, não tem custo mensal.
+
+ODS: ODS 7 (Energia limpa e acessível)
+INDICADOR DE IMPACTO: número de ações cadastradas por moradores diferentes em 4 semanas
+
+CAMPOS DE CADA FICHA
+- Titulo da ação: texto curto
+- Categoria: lista de opções (Ambiental, Social, Educação, Saúde)
+- Local: texto curto
+- Quantas pessoas participaram: número
+- O que foi feito: texto longo
+Data preenchida automaticamente.
+
+TECNOLOGIA
+HTML, CSS e JavaScript puro, em tres arquivos separados.
+Persistencia com localStorage do navegador.
+
+LINK DO SITE: ____________________________________
+EQUIPE: __________________________________________
+TURMA: ___________________________________________

@@ -1,0 +1,14 @@
+COLOQUE AS SUAS FOTOS NESTA PASTA.
+
+Regras:
+1. So fotos tiradas por voce ou pela sua equipe.
+2. Nome do arquivo tudo minusculo, sem espaco e sem acento.
+   Certo: praca-antes.jpg      Errado: Praca Antes.JPG
+3. Cada foto abaixo de 300 KB. Compacte em squoosh.app ou tinypng.com.
+4. O index.html espera encontrar tres arquivos aqui:
+      capa.jpg
+      foto1.jpg
+      foto2.jpg
+   Se voce usar outros nomes, corrija tambem dentro do index.html.
+
+Depois de colocar as fotos, pode apagar este arquivo.
