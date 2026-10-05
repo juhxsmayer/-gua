@@ -7,11 +7,11 @@
 /* As cores do site inteiro ficam aqui. Troque um valor e ele
    muda em todos os lugares de uma vez. */
 :root{
-  --tinta:  #10201c;   /* cor do texto */
-  --papel:  #f1f0ea;   /* fundo da pagina */
-  --marca:  #1f4e79;   /* cor principal, botoes e barras */
-  --sinal:  #e39a10;   /* cor de destaque */
-  --alerta: #a34123;   /* cor de apagar */
+  --tinta:  #201019;   /* cor do texto */
+  --papel:  #feb4e1;   /* fundo da pagina */
+  --marca:  #d99eca;   /* cor principal, botoes e barras */
+  --sinal:  #dfa3c7;   /* cor de destaque */
+  --alerta: #c890b0;   /* cor de apagar */
   --borda:  #ccd2c8;
   --largura: 1080px;   /* largura maxima do conteudo */
 }
