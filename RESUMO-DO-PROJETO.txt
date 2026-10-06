@@ -1,23 +1,23 @@
-PROJETO: Luz Radia
+PROJETO: EcoLuz
 
 PROBLEMA
-Ações de limpeza e doação acontecem no bairro, mas ninguém registra, então nada é cobrado nem tem continuidade.
+Uma plataforma gratuita que oferece dicas de economia de energia personalizadas por região e facilita o acesso a financiamento de energia solar para famílias de baixa renda sem eletricidade.
 
-QUEM SOFRE: Moradores da Vila Nova que organizam mutirões por conta própria e nunca sabem o que já foi feito.
-ONDE: Vila Nova, entre a Rua das Palmeiras e a praça central.
+QUEM SOFRE: Moradores do Porto Meira
+ONDE: Jardim Morenitas e Loteamento Bubas
 
 O QUE O SISTEMA FAZ
-Registra cada ação realizada no bairro com responsável, local e data, e mostra tudo num mural público.
+Fornece dicas personalizadas de economia de energia por região e converte o dinheiro economizado pelos usuários ao acessar o site em doações de eletricidade para famílias que vivem sem acesso à luz/tem problemas de queda
 
-QUEM USA: Moradores, a associação de bairro e os alunos que organizam mutirões.
-POR QUE USARIA: O trabalho dela fica visível e ela consegue mostrar para a prefeitura o que já foi feito.
-COMO SE MANTEM: A associação de moradores fica com a senha e alimenta o mural. O site é gratuito, não tem custo mensal.
+QUEM USA: Moradores de toda a região de Foz do Iguaçu
+POR QUE USARIA: Para reduzir a conta de luz da própria casa com dicas para a sua região (grátis) e ajudando a iluminar vida de famílias que vivem na escuridão
+COMO SE MANTEM: A pesquisa feita garante tudo o que o morador precisa saber sem a interferência de terceiros. O site é gratuito, não tem custo mensal.
 
 ODS: ODS 7 (Energia limpa e acessível)
 INDICADOR DE IMPACTO: número de ações cadastradas por moradores diferentes em 4 semanas
 
 CAMPOS DE CADA FICHA
-- Titulo da ação: texto curto
+- Título da ação: texto curto
 - Categoria: lista de opções (Ambiental, Social, Educação, Saúde)
 - Local: texto curto
 - Quantas pessoas participaram: número

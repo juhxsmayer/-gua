@@ -7,11 +7,11 @@
 /* As cores do site inteiro ficam aqui. Troque um valor e ele
    muda em todos os lugares de uma vez. */
 :root{
-  --tinta:  #201019;   /* cor do texto */
-  --papel:  #feb4e1;   /* fundo da pagina */
-  --marca:  #d99eca;   /* cor principal, botoes e barras */
-  --sinal:  #dfa3c7;   /* cor de destaque */
-  --alerta: #c890b0;   /* cor de apagar */
+  --tinta:  #ba8e23;   /* cor do texto */
+  --papel:  #f1f0ea;   /* fundo da pagina */
+  --marca:  #FFFF00;   /* cor principal, botoes e barras */
+  --sinal:  #ffee00;   /* cor de destaque */
+  --alerta: #ffee00;   /* cor de apagar */
   --borda:  #ccd2c8;
   --largura: 1080px;   /* largura maxima do conteudo */
 }
@@ -167,8 +167,8 @@ input, select, textarea{
 }
 
 /* --------- RODAPE --------- */
-.rodape{ background: var(--tinta); color: #d8ddd6; padding: 2rem 1.2rem; text-align: center; }
-.miudo{ font-size: .8rem; color: #97a19b; margin-top: .4rem; }
+.rodape{ background: var(--tinta); color: white; padding: 2rem 1.2rem; text-align: center; }
+.miudo{ font-size: .8rem; color: white; margin-top: .4rem; }
 
 /* --------- CELULAR --------- */
 /* Tudo aqui dentro so vale em telas de ate 640px de largura */

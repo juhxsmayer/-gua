@@ -5,7 +5,7 @@
    ========================================================= */
 
 // A "etiqueta" da gaveta do navegador onde tudo fica guardado.
-const CHAVE = "luzRadia-dados";
+const CHAVE = "ecoluz-dados";
 
 // Pegamos os pedacos da pagina com que vamos trabalhar.
 const formulario = document.getElementById("formulario");
