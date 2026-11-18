@@ -178,3 +178,25 @@ input, select, textarea{
   .bloco{ padding: 2rem 1rem; }
   .ferramentas{ flex-direction: column; align-items: stretch; }
 }
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.logos{
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+}
